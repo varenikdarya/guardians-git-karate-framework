@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("a862d97b-80d0-4d10-a5cf-89e5237eaae1",{name:"varen"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>features.planCode</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-08-16 08:14:13 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Validated get plan codes</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/planCode.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Plan Code feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">Regression</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Validated get plan codes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>923</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://tek-insurance-api.azurewebsites.net&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def tokenFeatureResult = callonce read(&#39;generateToken.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">397</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">20:14:12.700 &lt;&lt; lock released, cached callonce: read(&#39;generateToken.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.generateToken</div>
+      </div>
+      <div class="time-cell passed">387</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://tek-insurance-api.azurewebsites.net&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5">20:14:12.304 &gt;&gt; lock acquired, begin callonce: read(&#39;generateToken.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/api/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;username&quot; : &quot;supervisor&quot; , &quot;password&quot; : &quot;tek_supervisor&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">386</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.8">20:14:12.315 request:
+1 &gt; POST https://tek-insurance-api.azurewebsites.net/api/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 53
+1 &gt; Host: tek-insurance-api.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;supervisor&quot;,&quot;password&quot;:&quot;tek_supervisor&quot;}
+
+20:14:12.698 response time in milliseconds: 383
+1 &lt; 200
+1 &lt; Content-Type: application/json
+1 &lt; Date: Thu, 17 Aug 2023 00:14:11 GMT
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Expires: 0
+1 &lt; Pragma: no-cache
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 1; mode=block
+1 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+1 &lt; X-Frame-Options: DENY
+{&quot;fullName&quot;:&quot;Supervisor&quot;,&quot;username&quot;:&quot;SUPERVISOR&quot;,&quot;token&quot;:&quot;eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2OTIzMTc2NTEsImlhdCI6MTY5MjIzMTI1MX0.AKpak9cwYq3uwCMbKcExko37XH6S-fFBgwFGnbCPHFHEkZwIPVuzs9pcjABuldOSsW4kO9sUgZ5r_9bLAYcKuA&quot;,&quot;generateDate&quot;:1692231251595,&quot;accountType&quot;:&quot;CSR&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.10">20:14:12.700 [print] {
+  &quot;fullName&quot;: &quot;Supervisor&quot;,
+  &quot;username&quot;: &quot;SUPERVISOR&quot;,
+  &quot;token&quot;: &quot;eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2OTIzMTc2NTEsImlhdCI6MTY5MjIzMTI1MX0.AKpak9cwYq3uwCMbKcExko37XH6S-fFBgwFGnbCPHFHEkZwIPVuzs9pcjABuldOSsW4kO9sUgZ5r_9bLAYcKuA&quot;,
+  &quot;generateDate&quot;: 1692231251595,
+  &quot;accountType&quot;: &quot;CSR&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print tokenFeatureResult</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">20:14:12.701 [print] {
+  &quot;responseStatus&quot;: 200,
+  &quot;response&quot;: {
+    &quot;fullName&quot;: &quot;Supervisor&quot;,
+    &quot;username&quot;: &quot;SUPERVISOR&quot;,
+    &quot;token&quot;: &quot;eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2OTIzMTc2NTEsImlhdCI6MTY5MjIzMTI1MX0.AKpak9cwYq3uwCMbKcExko37XH6S-fFBgwFGnbCPHFHEkZwIPVuzs9pcjABuldOSsW4kO9sUgZ5r_9bLAYcKuA&quot;,
+    &quot;generateDate&quot;: 1692231251595,
+    &quot;accountType&quot;: &quot;CSR&quot;
+  },
+  &quot;responseHeaders&quot;: {
+    &quot;Content-Type&quot;: [
+      &quot;application/json&quot;
+    ],
+    &quot;Date&quot;: [
+      &quot;Thu, 17 Aug 2023 00:14:11 GMT&quot;
+    ],
+    &quot;Cache-Control&quot;: [
+      &quot;no-cache, no-store, max-age=0, must-revalidate&quot;
+    ],
+    &quot;Expires&quot;: [
+      &quot;0&quot;
+    ],
+    &quot;Pragma&quot;: [
+      &quot;no-cache&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Vary&quot;: [
+      &quot;Origin&quot;,
+      &quot;Access-Control-Request-Method&quot;,
+      &quot;Access-Control-Request-Headers&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-XSS-Protection&quot;: [
+      &quot;1; mode=block&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=31536000 ; includeSubDomains&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;DENY&quot;
+    ]
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def validToken = tokenFeatureResult.response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/api/plans/get-all-plan-code&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + validToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">521</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">20:14:12.704 request:
+2 &gt; GET https://tek-insurance-api.azurewebsites.net/api/plans/get-all-plan-code
+2 &gt; Authorization: Bearer eyJraWQiOiJUZWtzY2hvb2wgSW5zdXJhbmNlIEFwcGxpY2F0aW9uIiwidHlwIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJhdWQiOiJVc2VyIG1hbmFnZW1lbnQgcG9ydGFsIiwic3ViIjoiU1VQRVJWSVNPUiIsImlzcyI6IlRlayBJbnN1cmFuY2UgQXBwbGljYXRpb24iLCJBdXRob3JpdGllcyI6WyJBRE1JTiJdLCJleHAiOjE2OTIzMTc2NTEsImlhdCI6MTY5MjIzMTI1MX0.AKpak9cwYq3uwCMbKcExko37XH6S-fFBgwFGnbCPHFHEkZwIPVuzs9pcjABuldOSsW4kO9sUgZ5r_9bLAYcKuA
+2 &gt; Host: tek-insurance-api.azurewebsites.net
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.17)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+20:14:13.222 response time in milliseconds: 518
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Date: Thu, 17 Aug 2023 00:14:11 GMT
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 1; mode=block
+2 &lt; Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+2 &lt; X-Frame-Options: DENY
+2 &lt; Set-Cookie: JSESSIONID=7B2FC90306D1593B2D99BFD469F4152E; Domain=tek-insurance-api.azurewebsites.net; Secure
+[{&quot;createdBy&quot;:&quot;SYSTEM&quot;,&quot;createdDate&quot;:1692224652240,&quot;modifiedBy&quot;:&quot;SYSTEM&quot;,&quot;modifiedDate&quot;:1692224652365,&quot;id&quot;:1584,&quot;planType&quot;:&quot;MOTORCYCLE&quot;,&quot;planBasePrice&quot;:100.00,&quot;icon&quot;:&quot;motorcycle&quot;,&quot;expirationDate&quot;:1692311052240,&quot;planExpired&quot;:false,&quot;new&quot;:false},{&quot;createdBy&quot;:&quot;SYSTEM&quot;,&quot;createdDate&quot;:1692224652014,&quot;modifiedBy&quot;:&quot;SYSTEM&quot;,&quot;modifiedDate&quot;:1692224652138,&quot;id&quot;:1583,&quot;planType&quot;:&quot;BOAT&quot;,&quot;planBasePrice&quot;:453.00,&quot;icon&quot;:&quot;directions_boat&quot;,&quot;expirationDate&quot;:1692311052014,&quot;planExpired&quot;:false,&quot;new&quot;:false},{&quot;createdBy&quot;:&quot;SYSTEM&quot;,&quot;createdDate&quot;:1692224651776,&quot;modifiedBy&quot;:&quot;SYSTEM&quot;,&quot;modifiedDate&quot;:1692224651912,&quot;id&quot;:1582,&quot;planType&quot;:&quot;RENTERS&quot;,&quot;planBasePrice&quot;:21.00,&quot;icon&quot;:&quot;house&quot;,&quot;expirationDate&quot;:1692311051776,&quot;planExpired&quot;:false,&quot;new&quot;:false},{&quot;createdBy&quot;:&quot;SYSTEM&quot;,&quot;createdDate&quot;:1692224651549,&quot;modifiedBy&quot;:&quot;SYSTEM&quot;,&quot;modifiedDate&quot;:1692224651674,&quot;id&quot;:1581,&quot;planType&quot;:&quot;AUTO&quot;,&quot;planBasePrice&quot;:150.00,&quot;icon&quot;:&quot;directions_car&quot;,&quot;expirationDate&quot;:1692311051549,&quot;planExpired&quot;:false,&quot;new&quot;:false}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">20:14:13.224 [print] [
+  {
+    &quot;createdBy&quot;: &quot;SYSTEM&quot;,
+    &quot;createdDate&quot;: 1692224652240,
+    &quot;modifiedBy&quot;: &quot;SYSTEM&quot;,
+    &quot;modifiedDate&quot;: 1692224652365,
+    &quot;id&quot;: 1584,
+    &quot;planType&quot;: &quot;MOTORCYCLE&quot;,
+    &quot;planBasePrice&quot;: 100.0,
+    &quot;icon&quot;: &quot;motorcycle&quot;,
+    &quot;expirationDate&quot;: 1692311052240,
+    &quot;planExpired&quot;: false,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;createdBy&quot;: &quot;SYSTEM&quot;,
+    &quot;createdDate&quot;: 1692224652014,
+    &quot;modifiedBy&quot;: &quot;SYSTEM&quot;,
+    &quot;modifiedDate&quot;: 1692224652138,
+    &quot;id&quot;: 1583,
+    &quot;planType&quot;: &quot;BOAT&quot;,
+    &quot;planBasePrice&quot;: 453.0,
+    &quot;icon&quot;: &quot;directions_boat&quot;,
+    &quot;expirationDate&quot;: 1692311052014,
+    &quot;planExpired&quot;: false,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;createdBy&quot;: &quot;SYSTEM&quot;,
+    &quot;createdDate&quot;: 1692224651776,
+    &quot;modifiedBy&quot;: &quot;SYSTEM&quot;,
+    &quot;modifiedDate&quot;: 1692224651912,
+    &quot;id&quot;: 1582,
+    &quot;planType&quot;: &quot;RENTERS&quot;,
+    &quot;planBasePrice&quot;: 21.0,
+    &quot;icon&quot;: &quot;house&quot;,
+    &quot;expirationDate&quot;: 1692311051776,
+    &quot;planExpired&quot;: false,
+    &quot;new&quot;: false
+  },
+  {
+    &quot;createdBy&quot;: &quot;SYSTEM&quot;,
+    &quot;createdDate&quot;: 1692224651549,
+    &quot;modifiedBy&quot;: &quot;SYSTEM&quot;,
+    &quot;modifiedDate&quot;: 1692224651674,
+    &quot;id&quot;: 1581,
+    &quot;planType&quot;: &quot;AUTO&quot;,
+    &quot;planBasePrice&quot;: 150.0,
+    &quot;icon&quot;: &quot;directions_car&quot;,
+    &quot;expirationDate&quot;: 1692311051549,
+    &quot;planExpired&quot;: false,
+    &quot;new&quot;: false
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response[0].planExpired == false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response[1].planExpired == false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response[2].planExpired == false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response[3].planExpired == false</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
